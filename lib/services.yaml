@@ -1,0 +1,145 @@
+- name: ImageAlter
+  versionString: "1.2.6"
+  strings:
+    title: Image Manipulation Plugin
+    summary: Allows authorized websites to manipulate images on your computer.
+      This includes the ability to rotate, crop, and scale images on your computer
+      from within a web browser.
+  os:
+    win32: 1948426
+    osx: 1903247
+  documentation: A corelet based on ImageMagick to alter images locally and
+    serve them over HTTP.
+  CoreletType: standalone
+  CoreletAPIVersion: 4
+- name: TextToSpeech
+  versionString: "1.0.2"
+  strings:
+    title: Text to speech converter
+    summary: A plugin that allows authorized websites to speak to you through 
+      your computer speakers.
+  os:
+    win32: 12665
+    osx: 7920
+  documentation: A corelet that interfaces the OS provided text to speech facilities.
+  CoreletType: standalone
+  CoreletAPIVersion: 4
+- name: JSONRequest
+  versionString: 1.0.5
+  strings:
+    title: JSON Request Component
+    summary: Allows secure cross domain JSON requests, inspired by 
+      http://www.json.org/JSONRequest.html.
+  os:
+    ind: 25759
+  documentation: Allows secure cross-domain JSON requests, inspired by 
+    http://www.json.org/JSONRequest.html.
+  CoreletType: dependent
+  CoreletRequires:
+    Minversion: ""
+    Name: RubyInterpreter
+    Version: "3"
+- name: PStore
+  versionString: 1.0.2
+  strings:
+    title: Local Storage Plugin
+    summary: Allows authorized sites to store data and preferences on your computer, 
+      on your behalf.  Storing your preferences on your computer rather than on a 
+      server is faster and sends less potentially personal information over the internet.
+  os:
+    ind: 5767
+  documentation: Provides a persistent store.
+  CoreletType: dependent
+  CoreletRequires:
+    Minversion: ""
+    Name: RubyInterpreter
+    Version: "3"
+- name: IRCClient
+  versionString: "1.1.8"
+  strings:
+    title: IRC Client
+    summary: A service that lets you connect to IRC chat rooms.
+  os:
+    ind: 37768
+  documentation: A service that allows you to connect to IRC chat servers.
+  CoreletType: dependent
+  CoreletRequires:
+    Minversion: "3.1"
+    Name: RubyInterpreter
+    Version: "3"
+- name: RubyInterpreter
+  versionString: "3.1.2"
+  strings:
+    title: Ruby Engine
+    summary: "Ruby software (unmodified): An independent component that enables plugins written in the Ruby language to run on your computer.  You can also download Ruby at: http://www.ruby-lang.org/en/downloads/ .  Ruby is distributed under the license terms set forth at http://www.ruby-lang.org/en/LICENSE.txt"
+  os:
+    win32: 2277757
+    osx: 2284862
+  documentation: A corelet which allows other services to be written in Ruby.
+  CoreletType: provider
+  CoreletAPIVersion: 4
+- name: Notify
+  versionString: "1.1.3"
+  strings:
+    title: Notify
+    summary: A service that can deliver notifications through the Growl
+      Notification framework, if installed.
+  os:
+    win32: 113249
+    osx: 111811
+  documentation: A corelet that interfaces the local notification framework (Growl on 
+    OSX or Snarl on Win32) to post end-user notifications.
+  CoreletType: standalone
+  CoreletAPIVersion: 4
+- name: FlickrUploader
+  versionString: "2.0.5"
+  strings:
+    title: Flickr Upload Helper
+    summary: This plugin helps websites publish photos to flickr.
+  os:
+    ind: 15351
+  documentation: Provides an interface to the Flickr Authorization and Upload API.
+  CoreletType: dependent
+  CoreletRequires:
+    Minversion: "3.1.1"
+    Name: RubyInterpreter
+    Version: "3"
+- name: FlickrUploader
+  versionString: "2.0.3"
+  strings:
+    title: Flickr Upload Helper
+    summary: This plugin helps websites publish photos to flickr.
+  os:
+    ind: 15001
+  documentation: Provides an interface to the Flickr Authorization and Upload API.
+  CoreletType: dependent
+  CoreletRequires:
+    Minversion: "3.0.13"
+    Name: RubyInterpreter
+    Version: "3"
+- name: FlickrUploader
+  versionString: "2.0.4"
+  strings:
+    title: Flickr Upload Helper
+    summary: This plugin helps websites publish photos to flickr.
+  os:
+    ind: 15111
+  documentation: Provides an interface to the Flickr Authorization and Upload API.
+  CoreletType: dependent
+  CoreletRequires:
+    Minversion: "3.1.1"
+    Name: RubyInterpreter
+    Version: "3"
+- name: Eval
+  versionString: "1.0.1"
+  strings:
+    title: Eval
+    summary: Run any Ruby whatsoever.
+  os:
+    ind: 4138
+  documentation: Just offers an eval function.
+  CoreletType: dependent
+  CoreletRequires:
+    Minversion: "3.1.2"
+    Name: RubyInterpreter
+    Version: "3"
