@@ -1,0 +1,11 @@
+To start up:
+ 
+  $ gem install camping json
+  $ camping -h 127.0.0.1 lib/plus.rb
+
+To fill up the `pkg` directory with the basic set of both Yahoo!
+official and Hackety Org unofficial additions:
+
+  $ wget http://plus.hackety.org/pkg.tar.gz
+  $ cd pkg
+  $ tar xzvf ../pkg.tar.gz
